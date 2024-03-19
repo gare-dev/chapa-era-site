@@ -1,5 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
-    
+}
+
+#header {
+    background-color: #96049C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 50px;
+
+}
+
+#whoRWEBox {
+
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+
+
+}
+
+#boxTxt {
+    justify-content: center;
+
+}
+
+#titleRWE {
+    font-family: "Luckiest Guy", cursive;
+    text-align: center;
+    color: #9A05A2;
+    font-size: 34px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+#imgLogo {
+
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+
+
+
+
+a {
+    font-family: "Koulen", sans-serif;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(163, 158, 158);
+}
+
+
+@media screen and (max-width: 425px) {
+    a {
+        font-size: 10px;
+    }
+
+    #whoRWEBox {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    #logoImg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    a {
+        font-size: 20px;
+    }
+
+    #whoRWEBox {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #logoImg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .container {
+
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    a {
+        font-size: 4px;
+    }
+
+    #whoRWEBox {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #logoImg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    a {
+        font-size: 15px;
+    }
+
+    #whoRWEBox {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #logoImg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav {
+        gap: px;
+    }
+
+    .container {
+
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    a {
+        font-size: 15px;
+    }
+
+    #logoImg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #whoRWEBox {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: px;
+    }
+
+    .container {
+
+        margin-right: 30px;
+    }
 }
