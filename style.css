@@ -68,7 +68,7 @@ nav {
     justify-content: center;
 }
 
-#props {
+#propostas {
     margin-top: 150px;
 }
 
@@ -203,13 +203,24 @@ a:hover {
         font-size: 4px;
     }
 
+    .boxesProp:active {
+        height: 200px;
+    }
+
     #boxProp {
-        grid-template-columns: 200px 200px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         margin-left: auto;
         place-items: center;
         margin-right: auto;
         gap: 10px;
+
+    }
+
+    .boxesProp {
+
+        overflow: hidden;
+        height: 50px;
 
     }
 
@@ -235,9 +246,21 @@ a:hover {
         font-size: 15px;
     }
 
+    .boxesProp {
+
+        overflow: hidden;
+        height: 50px;
+
+    }
+
+    .boxesProp:active {
+        height: 200px;
+    }
+
     #boxProp {
-        grid-template-columns: 200px 200px;
-        display: grid;
+
+        display: flex;
+        flex-direction: column;
         margin-left: auto;
         place-items: center;
         margin-right: auto;
@@ -271,9 +294,21 @@ a:hover {
         font-size: 15px;
     }
 
+    .boxesProp {
+
+        overflow: hidden;
+        height: 50px;
+
+    }
+
+    .boxesProp {
+        transition: ease-in 0.4s;
+    }
+    
+
     #boxProp {
-        grid-template-columns: 200px 200px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         margin-left: auto;
         place-items: center;
         margin-right: auto;
@@ -292,9 +327,7 @@ a:hover {
         gap: 20px;
     }
 
-    nav {
-        gap: px;
-    }
+
 
     .container {
 
