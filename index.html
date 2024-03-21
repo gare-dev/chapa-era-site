@@ -7,13 +7,13 @@
     <title>Chapa ERA</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="img/imgIco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/newIco.png" type="image/x-icon">
 </head>
 
-<body style="background-color: rgb(162, 213, 255);">
+<body style="background-color: black;">
 
     <header id="header">
-        <img style="border-radius: 100%;" width="100px" src="img/logoERA.jpeg" alt="logo chapa">
+        <img style="border-radius: 100%;" width="100px" src="img/newIco.png" alt="logo chapa">
 
         <div class="container">
             <nav>
@@ -30,7 +30,7 @@
 
         <div id="whoRWEBox">
             <div id="logoImg">
-                <img id="imgLogo" width="" src="img/logoERA.jpeg" alt="logoERA">
+                <img id="imgLogo" width="1000px" src="img/newIco.png" alt="logoERA">
             </div>
             <div id="boxTxt">
                 <h1 id="titleRWE">QUEM SOMOS?</h1>
@@ -84,74 +84,10 @@
 
     <section id="membros">
 
-        <script>
-            const boxes = document.getElementsByClassName('boxesProp');
 
-
-
-            for (let i = 0; i < boxes.length; i++) {
-                boxes[i].addEventListener("click", function () {
-                    const isSmallScreen = window.matchMedia("(max-width: 320px)").matches;
-                    const isMediumScreen = window.matchMedia("(max-width: 375px)").matches;
-                    const isLargeScreen = window.matchMedia("(max-width: 430px)").matches;
-
-                    if (isSmallScreen || isMediumScreen || isLargeScreen) {
-                        const currentHeight = parseInt(this.style.height);
-
-                        const box1 = document.getElementById('box1');
-                        const box1Height = parseInt(window.getComputedStyle(box1).height);
-
-                        const box2 = document.getElementById('box2');
-                        const box2Height = parseInt(window.getComputedStyle(box2).height);
-
-                        const box3 = document.getElementById('box3');
-                        const box3Height = parseInt(window.getComputedStyle(box3).height);
-
-                        const box4 = document.getElementById('box4');
-                        const box4Height = parseInt(window.getComputedStyle(box4).height);
-
-                        const isBox1Open = box1Height === 400;
-                        const isBox2Open = box2Height === 400;
-                        const isBox3Open = box3Height === 400;
-                        const isBox4Open = box4Height === 400;
-
-
-                        if (currentHeight === 50) {
-                            this.style.height = "400px";
-                        } else {
-                            this.style.height = "50px";
-                        }
-
-                        if(isBox1Open){
-                            box2Height
-                        }
-                    }
-
-
-                });
-            }
-
-
-
-
-
-
-
-
-
-        </script>
-
-        <h1>t</h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <h1>t</h1>
     </section>
-
-
-
-
-
-
 </body>
+
+<script src="script.js"></script>
 
 </html>
