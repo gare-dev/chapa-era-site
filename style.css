@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 
 
 
@@ -51,7 +52,8 @@ nav {
 }
 
 #titleRWE,
-#propTxt {
+#propTxt,
+#titleMembers {
     font-family: "Luckiest Guy", cursive;
     color: #c39152;
     font-size: 34px;
@@ -69,7 +71,7 @@ nav {
 }
 
 #propostas {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .boxesProp {
@@ -106,6 +108,83 @@ nav {
 
 
 /* FIM NOSSAS PROPOSTAS */
+
+/* NOSSA EQUIPE INICIOS */
+
+#memberTitle {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+#membros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#membersBoxes {
+
+    border-radius: 40px;
+    display: grid;
+    justify-content: center;
+    gap: 2px;
+    row-gap: 50px;
+    grid-template-columns: 300px 300px 300px;
+    margin-top: 90px;
+}
+
+.boxTitle {
+
+    color: #c39152;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Luckiest Guy", cursive;
+
+}
+
+
+.memberBox {
+
+    width: 220px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: #c39152;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+.inMembersBoxes {
+
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+
+
+}
+
+.membersName {
+
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+    line-height: 50px;
+    font-family: "Mohave", sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* NOSSA EQUIPE FIM*/
 
 #imgLogo {
 
@@ -158,6 +237,13 @@ a:hover {
     .container {
 
         margin-right: 30px;
+    }
+
+    #membersBoxes {
+
+        display: flex;
+        flex-direction: column;
+
     }
 }
 
@@ -247,15 +333,9 @@ a:hover {
     }
 
     .boxesProp {
-
         overflow: hidden;
         height: 50px;
         width: 250px;
-
-    }
-
-    .boxesProp:active {
-        height: 200px;
     }
 
     #boxProp {
@@ -288,6 +368,14 @@ a:hover {
 
         margin-right: 30px;
     }
+
+    #membersBoxes {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
 }
 
 @media screen and (max-width: 430px) {
@@ -333,4 +421,24 @@ a:hover {
 
         margin-right: 30px;
     }
+
+    #membersBoxes {
+
+        display: flex;
+        flex-direction: column;
+
+    }
 }
+
+@media screen and (max-width: 768px) {
+
+    #membersBoxes {
+
+        grid-template-columns: auto auto;
+
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {}
