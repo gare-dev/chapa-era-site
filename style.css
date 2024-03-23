@@ -12,6 +12,12 @@
     margin: 0px;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+
+
 #header {
     background-color: black;
     display: flex;
@@ -23,7 +29,7 @@
 .container {
     display: flex;
     justify-content: center;
-    margin-right: 50px;
+
 }
 
 nav {
@@ -31,6 +37,7 @@ nav {
     justify-content: space-between;
     color: white;
     gap: 50px;
+
 }
 
 /* QUEM SOMOS */
@@ -134,6 +141,8 @@ nav {
     row-gap: 50px;
     grid-template-columns: 300px 300px 300px;
     margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .boxTitle {
@@ -185,6 +194,71 @@ nav {
 }
 
 /* NOSSA EQUIPE FIM*/
+
+/* FAQ INICIO*/
+
+#titleFaq {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#faq {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#faqTxt {
+    font-family: "Luckiest Guy", cursive;
+    color: #c39152;
+    font-size: 34px;
+    text-align: center;
+}
+
+#faqMainBox {
+
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+    gap: 30px;
+
+}
+
+.faqBoxes {
+    padding: 8px;
+    width: 250px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #c39152;
+}
+
+.txtFaqBox {
+    font-family: "Luckiest Guy", sans-serif;
+    color: #c39152;
+    margin-bottom: 3px;
+    font-size: 17px;
+
+
+}
+
+.contentFaqBox {
+    font-family: "Figtree", sans-serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+
+}
+
+/* FAQ FIM*/
 
 #imgLogo {
 
@@ -245,6 +319,21 @@ a:hover {
         flex-direction: column;
 
     }
+
+    #faqMainBox {
+        flex-direction: column;
+    }
+
+
+    .faqBoxes {
+        height: auto;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -288,9 +377,6 @@ a:hover {
         font-size: 4px;
     }
 
-    .boxesProp:active {
-        height: 200px;
-    }
 
     #boxProp {
         display: flex;
@@ -321,8 +407,23 @@ a:hover {
         margin-right: auto;
     }
 
-    nav {
-        gap: 5px;
+    #navnav {
+        display: flex;
+        gap: 4px;
+
+    }
+
+    #faqMainBox {
+        flex-direction: column;
+    }
+
+
+    .faqBoxes {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+        height: auto;
+        padding-bottom: 20px;
     }
 
 }
@@ -360,8 +461,8 @@ a:hover {
         margin-right: auto;
     }
 
-    nav {
-        gap: px;
+    #navnav {
+        gap: 10px;
     }
 
     .container {
@@ -374,6 +475,19 @@ a:hover {
         display: flex;
         flex-direction: column;
 
+    }
+
+    #faqMainBox {
+        flex-direction: column;
+    }
+
+
+    .faqBoxes {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+        height: auto;
+        padding-bottom: 20px;
     }
 
 }
@@ -428,6 +542,19 @@ a:hover {
         flex-direction: column;
 
     }
+
+    #faqMainBox {
+        flex-direction: column;
+    }
+
+
+    .faqBoxes {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -438,7 +565,62 @@ a:hover {
 
     }
 
+    #boxProp {
+        grid-template-columns: 200px 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .faqBoxes {
+        gap: 5px;
+    }
+
+    nav {
+        gap: 30px;
+    }
+
 
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 680px) {
+
+    nav {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    #membersBoxes {
+
+        grid-template-columns: auto auto;
+
+    }
+
+    #boxProp {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    .faqBoxes {
+        gap: 2px;
+
+    }
+
+    #faqMainBox {
+        gap: 10px;
+        margin-right: 2;
+        margin-left: 2;
+    }
+
+    .boxTitle {
+        font-size: 15px;
+    }
+
+    #membersBoxes {
+        gap: 15px;
+    }
+
+}
