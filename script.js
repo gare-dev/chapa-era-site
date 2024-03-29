@@ -4,13 +4,13 @@ const isMediumScreen = window.matchMedia("(max-width: 375px)").matches;
 const isSmallScreen = window.matchMedia("(max-width: 320px)").matches;
 const isLargeScreen = window.matchMedia("(max-width: 430px)").matches;
 
+const body = document.getElementById('body');
+
 const Ainsta = document.getElementById('Ainsta');
 const Awhorus = document.getElementById('Awhorus');
 const propJs = document.getElementById('propsJs');
 const membersJs = document.getElementById('membersJs');
 const faqJs = document.getElementById('faqJs');
-
-
 
 
 for (let i = 0; i < boxes.length; i++) {
@@ -42,52 +42,5 @@ for (let i = 0; i < boxes.length; i++) {
     });
 }
 
-if (isSmallScreen) {
-
-    let fontSize = "15px"
-
-    faqJs.style.fontSize = fontSize
-    Ainsta.style.fontSize = fontSize
-    Awhorus.style.fontSize = fontSize
-    membersJs.style.fontSize = fontSize
-    faqJs.style.fontSize = fontSize
-    propJs.style.fontSize = fontSize
 
 
-
-} else if (isMediumScreen) {
-    let fontSize = "18px"
-
-    faqJs.style.fontSize = fontSize
-    Ainsta.style.fontSize = fontSize
-    Awhorus.style.fontSize = fontSize
-    membersJs.style.fontSize = fontSize
-    faqJs.style.fontSize = fontSize
-    propJs.style.fontSize = fontSize
-
-
-}
-
-else if (isLargeScreen) {
-    let fontSize = "20px"
-
-    faqJs.style.fontSize = fontSize
-    Ainsta.style.fontSize = fontSize
-    Awhorus.style.fontSize = fontSize
-    membersJs.style.fontSize = fontSize
-    faqJs.style.fontSize = fontSize
-    propJs.style.fontSize = fontSize
-
-}
-
-if (isMediumScreen || isSmallScreen) {
-
-    Awhorus.innerHTML = "sobre";
-    Ainsta.innerHTML = "insta";
-
-}
-else {
-    Ainsta.innerHTML = "instagram";
-    Awhorus.innerHTML = "sobre a era";
-
-}
