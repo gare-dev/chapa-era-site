@@ -13,7 +13,7 @@
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -79,6 +79,7 @@ nav {
 
 #propostas {
     margin-top: 100px;
+    margin-bottom: 130px;
 }
 
 .boxesProp {
@@ -88,6 +89,7 @@ nav {
     border: 3px solid;
     border-color: #c39152;
     border-radius: 10px;
+    transition: all 1s;
 }
 
 #boxProp {
@@ -112,7 +114,9 @@ nav {
     margin-right: 4px;
 }
 
-
+.boxesProp:hover {
+    transform: scale(105%);
+}
 
 /* FIM NOSSAS PROPOSTAS */
 
@@ -122,13 +126,13 @@ nav {
 
     display: flex;
     justify-content: center;
-    padding-top: 120px;
 }
 
 #membros {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 130px;
 
 }
 
@@ -198,7 +202,7 @@ nav {
 /* FAQ INICIO*/
 
 #titleFaq {
-    margin-top: 100px;
+
     display: flex;
     justify-content: center;
 
@@ -208,6 +212,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 130px;
 }
 
 #faqTxt {
@@ -240,6 +245,7 @@ nav {
     border-width: 3px;
     border-style: solid;
     border-color: #c39152;
+    transition: all 1s;
 }
 
 .txtFaqBox {
@@ -258,7 +264,65 @@ nav {
 
 }
 
+.faqBoxes:hover {
+    transform: scale(105%);
+
+}
+
+
+
 /* FAQ FIM*/
+
+/* INSTAGRAM INICIO */
+
+#instagram {
+    padding-bottom: 400px;
+}
+
+#instaTitle {
+    font-family: "Luckiest Guy", cursive;
+    color: #c39152;
+    font-size: 34px;
+    text-align: center;
+}
+
+.textInsta,
+#instaLink {
+    font-size: 30px;
+    font-family: "Figtree", sans-serif;
+    color: white;
+
+}
+
+#instaLink {
+    color: #c39152;
+}
+
+#instaLink:hover {
+    color: #768ece;
+    cursor: pointer;
+
+}
+
+#redeSocial {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#videoYt {
+    display: flex;
+    justify-content: center;
+}
+
+#instaLink {
+    font-family: "Koulen", sans-serif;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* INSTAGRAM FIM*/
 
 #imgLogo {
 
@@ -271,10 +335,12 @@ a {
     font-size: 30px;
     color: white;
     text-decoration: none;
+    transition: all 0.3s;
 }
 
 a:hover {
     color: #c39152;
+    
 }
 
 
@@ -333,6 +399,11 @@ a:hover {
         width: auto;
         height: auto;
         padding-bottom: 20px;
+    }
+
+    iframe {
+        height: 300px;
+        width: auto;
     }
 }
 
@@ -426,6 +497,8 @@ a:hover {
         padding-bottom: 20px;
     }
 
+
+
 }
 
 @media screen and (max-width: 375px) {
@@ -462,7 +535,7 @@ a:hover {
     }
 
     #navnav {
-        gap: 10px;
+        gap: 5px;
     }
 
     .container {
@@ -489,6 +562,8 @@ a:hover {
         height: auto;
         padding-bottom: 20px;
     }
+
+
 
 }
 
@@ -555,6 +630,8 @@ a:hover {
         height: auto;
         padding-bottom: 20px;
     }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -578,6 +655,8 @@ a:hover {
     nav {
         gap: 30px;
     }
+
+
 
 
 }
