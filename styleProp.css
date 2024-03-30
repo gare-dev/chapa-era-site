@@ -1,0 +1,19 @@
+#start-text-section{
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+
+#start-text-p {
+    text-align: center;
+    color: white;
+    font-size: 21px;
+}
+
+.font-title {
+    font-family: "Luckiest Guy", cursive;
+    color: #c39152;
+    font-size: 34px;
+    text-align: center;
+}
