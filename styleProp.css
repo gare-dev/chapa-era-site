@@ -1,4 +1,11 @@
-#start-text-section{
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Staatliches&display=swap');
+
+#rel-acad-section{
+
+    padding-bottom: 100px;
+}
+
+#start-text-section {
 
     padding-top: 50px;
     padding-bottom: 100px;
@@ -16,4 +23,71 @@
     color: #c39152;
     font-size: 34px;
     text-align: center;
+}
+
+.box {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 70px;
+
+}
+
+.section-title {
+    color: white;
+    text-align: left;
+    font-family: "Bungee", sans-serif;
+    font-size: 30px;
+}
+
+.section-text {
+
+    padding-top: 10px;
+    color: white;
+    font-size: 25px;
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .box {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .section-text {
+        font-size: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 375px) {
+
+    .box {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .section-text {
+        font-size: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    .box {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .section-text {
+        font-size: 20px;
+    }
+
+    
 }

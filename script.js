@@ -32,10 +32,10 @@ for (let i = 0; i < boxes.length; i++) {
 
             const currentHeight = parseInt(this.style.height);
 
-            if (currentHeight === 400 && (isLargeScreen || isMediumScreen || isSmallScreen)) {
+            if (currentHeight === 470 && (isLargeScreen || isMediumScreen || isSmallScreen)) {
                 this.style.height = "50px";
             } else {
-                this.style.height = "400px";
+                this.style.height = "470px";
             }
         }
 
