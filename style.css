@@ -150,7 +150,7 @@ nav {
 }
 
 .txtProps {
-    font-size: 22px;
+    font-size: 18px;
     font-family: "Figtree", sans-serif;
     margin-left: 10px;
     color: white;
@@ -384,6 +384,15 @@ a {
 a:hover {
     color: #c39152;
 
+}
+
+#clickHere,
+#clickA {
+    font-size: 40px;
+}
+
+#clickA {
+    color: #c39152;
 }
 
 
@@ -687,23 +696,18 @@ a:hover {
 
     }
 
-    #boxProp {
-        grid-template-columns: 200px 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 
     .faqBoxes {
         gap: 5px;
     }
-    
+
 
     nav {
         gap: 30px;
     }
-    
+
     .txtProps {
-       font-size: 20px;
+        font-size: 13px;
     }
 
 
@@ -729,6 +733,10 @@ a:hover {
     #boxProp {
         gap: 10px;
     }
+
+    .txtProps {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 530px) {
@@ -751,5 +759,45 @@ a:hover {
     #membersBoxes {
         gap: 15px;
     }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    .txtProps {
+        font-size: 18px;
+    }
+
+
+    #boxProp {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    .txtProps {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .txtProps {
+        font-size: 15px;
+
+    }
+
+    #boxProp {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+
 
 }

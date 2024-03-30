@@ -24,11 +24,15 @@ for (let i = 0; i < boxes.length; i++) {
             const box2 = document.getElementById('box2');
             const box3 = document.getElementById('box3');
             const box4 = document.getElementById('box4');
+            const box5 = document.getElementById('box5');
+            const box6 = document.getElementById('box6');
 
             box1.style.height = "50px";
             box2.style.height = "50px";
             box3.style.height = "50px";
             box4.style.height = "50px";
+            box5.style.height = "50px";
+            box6.style.height = '50px';
 
             const currentHeight = parseInt(this.style.height);
 
