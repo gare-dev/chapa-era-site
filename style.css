@@ -797,7 +797,28 @@ a:hover {
         margin-right: 10px;
     }
 
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+
+    .txtProps {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    #boxProp {
+        display: grid;
+        grid-template-columns: 100px;
 
 
+    }
+
+    iframe {
+        height: 400px;
+        width: 350px;
+    }
 
 }
