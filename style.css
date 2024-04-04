@@ -397,6 +397,31 @@ a:hover {
 }
 
 
+
+@keyframes pulando {
+
+    0% {
+        
+        color: white;
+
+    }
+
+    50% {
+        color: #c39152
+
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.pulando {
+
+    animation: pulando 0.5s ease-in infinite;
+    
+}
+
 @media screen and (max-width: 425px) {
     a {
         font-size: 10px;
